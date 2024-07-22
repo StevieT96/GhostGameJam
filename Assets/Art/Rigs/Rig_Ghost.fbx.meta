@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d4b466d277de2be4bacacec818c40ac0
+guid: 64b127d3142520945a78163f0bad4a00
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,7 +7,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Default_Material
+      name: Ghost_AtlasPalette_M_DwarfAtlas
     second: {fileID: 2100000, guid: effc587ca2161d7439f42e1271ae33ee, type: 2}
   materials:
     materialImportMode: 2
