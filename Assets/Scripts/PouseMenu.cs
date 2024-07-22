@@ -39,7 +39,9 @@ public class PouseMenu : MonoBehaviour
 
     public void Resume()
     {
-
+        pouseMenu.SetActive(false);
+        Time.timeScale = 1;
+        isPoused = false;
     }
 
     public void GoToMainMenu()
@@ -49,6 +51,7 @@ public class PouseMenu : MonoBehaviour
 
     public void QuitApplication()
     {
-       
+        Application.Quit();
+        Debug.Log("quiting");
     }
 }
