@@ -33,10 +33,8 @@ public class AiController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int randomWayPoint = RandomNumberGenerator.GetInt32(0, AiWayPoints.Count);
 
-        currentWayPoint = AiWayPoints[randomWayPoint];
-
+        MoveToNewWayPoint();
 
         hasTargetPosition = anim.GetBool("HasTargetPosition");
         scareMeter = anim.GetInteger("ScareMeter");
