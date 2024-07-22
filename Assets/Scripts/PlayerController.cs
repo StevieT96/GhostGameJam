@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] Animator anim;
 
+    [SerializeField] LayerMask layerMask;
+
     private PlayerInputActionMap _inputActions;
     private PlayerInputActionMap _InputActions
     {
@@ -75,7 +77,7 @@ public class PlayerController : MonoBehaviour
 
         Ray ray = cam.ScreenPointToRay(mousePosition);
         Debug.Log(ray);
-        if (Physics.Raycast(ray, out RaycastHit hit, 9999999, LayerMask.GetMask("Walkable")))
+        if (Physics.Raycast(ray, out RaycastHit hit, 9999999, layerMask))
         {
             if (agent.SetDestination(hit.point))
             {
