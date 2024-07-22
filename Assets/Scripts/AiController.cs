@@ -60,6 +60,9 @@ public class AiController : MonoBehaviour
         {
             agent.SetDestination(myNavHit.position);
 
+            hasTargetPosition = true;
+            anim.SetBool("HasTargetPosition", true);
+
         }
     }
 
@@ -68,6 +71,9 @@ public class AiController : MonoBehaviour
         arrivedAtWaypoint = true;
 
         int randomWaitTime = RandomNumberGenerator.GetInt32(LowerRandomTimeToWaitBeforeMoving, UpperRandomTimeToWaitBeforeMoving + 1);
+
+        hasTargetPosition = false;
+        anim.SetBool("HasTargetPosition", false);
 
         StartCoroutine(WaitSecondsMoveToNewWayPoint(randomWaitTime));
 
