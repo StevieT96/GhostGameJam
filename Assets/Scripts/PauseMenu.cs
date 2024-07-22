@@ -8,6 +8,8 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
 
+    public GameObject Tutorial;
+
     public bool isPaused;
 
     public string SceneName;
@@ -32,6 +34,9 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 0;
+        Tutorial.SetActive(true);
+
         _inputActions.Main.Settings.performed += ctx => TogglePause();
 
         isPaused = false;
@@ -73,5 +78,11 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("quiting");
         Application.Quit();
+    }
+
+    public void Continue()
+    {
+        Time.timeScale = 1;
+        Tutorial.SetActive(false);
     }
 }
