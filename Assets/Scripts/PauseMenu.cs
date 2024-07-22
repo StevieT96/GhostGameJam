@@ -32,7 +32,7 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _inputActions.Main.Move.performed += ctx => TogglePause();
+        _inputActions.Main.Settings.performed += ctx => TogglePause();
 
         isPaused = false;
         pauseMenu.SetActive(false);
