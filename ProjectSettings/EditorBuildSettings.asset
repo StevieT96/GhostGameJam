@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Pordushen scences/MainMenu.unity
+    guid: 8af58b1db8edcd44084476c3b39e1d48
+  - enabled: 1
+    path: Assets/Scenes/Pordushen scences/Level.unity
+    guid: 1fd2da35055652e4792adf398b676882
   m_configObjects: {}

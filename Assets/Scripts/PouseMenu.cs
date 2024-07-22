@@ -49,7 +49,7 @@ public class PouseMenu : MonoBehaviour
 
     public void GoToMainMenu()
     {   
-            SceneManager.LoadScene(SceneName, LoadSceneMode.Additive);
+            SceneManager.LoadScene(SceneName);
         
     }
 

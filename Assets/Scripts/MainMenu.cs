@@ -20,12 +20,7 @@ public class MainMenu : MonoBehaviour
 
     public void start()
     {
-
-    }
-
-    public void ChangeScene()
-    {
-        SceneManager.LoadScene(SceneName, LoadSceneMode.Additive);
+        SceneManager.LoadScene(SceneName);
     }
 
     public void QuitApplication()
