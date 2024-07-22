@@ -21,6 +21,7 @@ public class AiController : MonoBehaviour
 
     [SerializeField] private float distanceNeededToArriveAtWaypoint = 3;
 
+    [SerializeField] private int LowerRandomTimeToWaitBeforeMoving = 2;
     [SerializeField] private int UpperRandomTimeToWaitBeforeMoving = 5;
 
     private bool arrivedAtWaypoint = false;
@@ -68,7 +69,7 @@ public class AiController : MonoBehaviour
     {
         arrivedAtWaypoint = true;
 
-        int randomWaitTime = RandomNumberGenerator.GetInt32(0, UpperRandomTimeToWaitBeforeMoving);
+        int randomWaitTime = RandomNumberGenerator.GetInt32(LowerRandomTimeToWaitBeforeMoving, UpperRandomTimeToWaitBeforeMoving + 1);
 
         StartCoroutine(WaitSecondsMoveToNewWayPoint(randomWaitTime));
 
