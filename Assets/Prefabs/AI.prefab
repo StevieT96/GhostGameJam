@@ -161,4 +161,5 @@ MonoBehaviour:
   AiRunPoint: {fileID: 0}
   AiWayPoints: []
   distanceNeededToArriveAtWaypoint: 3
+  LowerRandomTimeToWaitBeforeMoving: 2
   UpperRandomTimeToWaitBeforeMoving: 5
