@@ -45,12 +45,14 @@ public class AiController : MonoBehaviour
     {
         distanceToWaypoint = Vector3.Distance(transform.position, currentWayPoint.transform.position);
 
-        if (distanceToWaypoint < distanceNeededToArriveAtWaypoint)
+        if (distanceToWaypoint < distanceNeededToArriveAtWaypoint && !arrivedAtWaypoint)
             ArrivedAtWaypoint();
     }
 
     private void MoveToNewWayPoint()
     {
+        arrivedAtWaypoint = false;
+
         int randomWayPoint = RandomNumberGenerator.GetInt32(0, AiWayPoints.Count);
 
         currentWayPoint = AiWayPoints[randomWayPoint];

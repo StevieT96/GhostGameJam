@@ -76,17 +76,13 @@ public class PlayerController : MonoBehaviour
         Vector3 mousePosition = mouse.position.ReadValue();
 
         Ray ray = cam.ScreenPointToRay(mousePosition);
-        Debug.Log(ray);
+
         if (Physics.Raycast(ray, out RaycastHit hit, 9999999, layerMask))
         {
             if (agent.SetDestination(hit.point))
             {
-                Debug.Log("destination set");
                 hasTargetPosition = true;
             }
-            Debug.Log("destination not set");
-
-            
         }
 
         return null;
