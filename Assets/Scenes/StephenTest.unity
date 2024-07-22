@@ -1796,9 +1796,17 @@ MonoBehaviour:
   m_Mesh: {fileID: 384044395}
   m_VersionIndex: 17
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 00000000
+  m_SelectedEdges:
+  - a: 0
+    b: 1
+  - a: 2
+    b: 0
+  - a: 1
+    b: 3
+  - a: 3
+    b: 2
+  m_SelectedVertices: 00000000010000000200000003000000
 --- !u!4 &319716500
 Transform:
   m_ObjectHideFlags: 0
@@ -2553,9 +2561,17 @@ MonoBehaviour:
   m_Mesh: {fileID: 307615319}
   m_VersionIndex: 17
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 03000000
+  m_SelectedEdges:
+  - a: 12
+    b: 13
+  - a: 14
+    b: 12
+  - a: 13
+    b: 15
+  - a: 15
+    b: 14
+  m_SelectedVertices: 0c0000000d0000000e0000000f000000
 --- !u!4 &619452666
 Transform:
   m_ObjectHideFlags: 0
@@ -4142,9 +4158,17 @@ MonoBehaviour:
   m_Mesh: {fileID: 1679892737}
   m_VersionIndex: 345
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 00000000
+  m_SelectedEdges:
+  - a: 0
+    b: 1
+  - a: 2
+    b: 0
+  - a: 1
+    b: 3
+  - a: 3
+    b: 2
+  m_SelectedVertices: 00000000010000000200000003000000
 --- !u!4 &1093565403
 Transform:
   m_ObjectHideFlags: 0
@@ -5686,9 +5710,17 @@ MonoBehaviour:
   m_Mesh: {fileID: 1785546166}
   m_VersionIndex: 17
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 04000000
+  m_SelectedEdges:
+  - a: 16
+    b: 17
+  - a: 18
+    b: 16
+  - a: 17
+    b: 19
+  - a: 19
+    b: 18
+  m_SelectedVertices: 10000000110000001200000013000000
 --- !u!4 &1599244232
 Transform:
   m_ObjectHideFlags: 0
