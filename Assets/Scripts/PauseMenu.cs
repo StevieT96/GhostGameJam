@@ -66,8 +66,7 @@ public class PauseMenu : MonoBehaviour
 
     public void GoToMainMenu()
     {   
-         SceneManager.LoadScene(SceneName, LoadSceneMode.Additive);
-        
+         SceneManager.LoadScene(SceneName, LoadSceneMode.Single);
     }
 
     public void QuitApplication()
