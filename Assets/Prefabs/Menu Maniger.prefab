@@ -46,8 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7b00cc92d666346a30a233d5a15d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pouseMenu: {fileID: 3314226037723858106}
-  isPoused: 0
+  pauseMenu: {fileID: 3314226037723858106}
+  isPaused: 0
+  SceneName: 
 --- !u!1 &3314226037577350797
 GameObject:
   m_ObjectHideFlags: 0
