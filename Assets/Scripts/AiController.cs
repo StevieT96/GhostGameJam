@@ -16,8 +16,8 @@ public class AiController : MonoBehaviour
     private int scareMeter = 0;
 
 
-    [SerializeField] private GameObject AiRunPoint;
-    [SerializeField] private List<GameObject> AiWayPoints;
+    [SerializeField] private Waypoint AiRunPoint;
+    [SerializeField] private List<Waypoint> AiWayPoints;
 
     [SerializeField] private float distanceNeededToArriveAtWaypoint = 3;
 
@@ -26,7 +26,7 @@ public class AiController : MonoBehaviour
 
     private bool arrivedAtWaypoint = false;
 
-    private GameObject currentWayPoint;
+    private Waypoint currentWayPoint;
 
     float distanceToWaypoint = 0;
 
@@ -43,7 +43,7 @@ public class AiController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        distanceToWaypoint = Vector3.Distance(transform.position, currentWayPoint.transform.position);
+        distanceToWaypoint = Vector3.Distance(transform.position, currentWayPoint.gameObject.transform.position);
 
         if (distanceToWaypoint < distanceNeededToArriveAtWaypoint && !arrivedAtWaypoint)
             ArrivedAtWaypoint();
@@ -53,26 +53,10 @@ public class AiController : MonoBehaviour
     {
         arrivedAtWaypoint = false;
 
-        int randomWayPoint = RandomNumberGenerator.GetInt32(0, AiWayPoints.Count);
-
-        if (currentWayPoint != null)
-        {
-            if (AiWayPoints[randomWayPoint] == currentWayPoint)
-            {
-                randomWayPoint = RandomNumberGenerator.GetInt32(0, AiWayPoints.Count);
-
-                currentWayPoint = AiWayPoints[randomWayPoint];
-            }
-            else
-                currentWayPoint = AiWayPoints[randomWayPoint];
-        }
-        else
-            currentWayPoint = AiWayPoints[randomWayPoint];
-
-
+        currentWayPoint = FindRandomUnoccupiedWaypoint();
 
         NavMeshHit myNavHit;
-        if (NavMesh.SamplePosition(currentWayPoint.transform.position, out myNavHit, 100, -1))
+        if (NavMesh.SamplePosition(currentWayPoint.gameObject.transform.position, out myNavHit, 100, -1))
         {
             agent.SetDestination(myNavHit.position);
 
@@ -100,5 +84,42 @@ public class AiController : MonoBehaviour
         yield return new WaitForSecondsRealtime(_waitTime);
 
         MoveToNewWayPoint();
+    }
+
+    private Waypoint FindRandomUnoccupiedWaypoint()
+    {
+        List<Waypoint> unoccupiedWaypoints = new List<Waypoint>();
+
+        foreach (var item in AiWayPoints)
+        {
+            if (!item.occupied)
+                unoccupiedWaypoints.Add(item);
+        }
+
+
+        bool foundWayPoint = false;
+
+        if (unoccupiedWaypoints.Count > 0)
+        {
+            while (foundWayPoint)
+            {
+                int randomWayPoint = RandomNumberGenerator.GetInt32(0, unoccupiedWaypoints.Count);
+
+                if (currentWayPoint != null)
+                {
+                    if (AiWayPoints[randomWayPoint] != currentWayPoint)
+                    {
+                        return unoccupiedWaypoints[randomWayPoint];
+                    }
+                }
+                else
+                {
+                    return unoccupiedWaypoints[randomWayPoint];
+                }
+            }
+        }
+        
+
+        return null;
     }
 }
