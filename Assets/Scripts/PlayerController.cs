@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] LayerMask layerMask;
 
+    [SerializeField] private float stopDist = 1;
+
     private PlayerInputActionMap _inputActions;
     private PlayerInputActionMap _InputActions
     {
@@ -47,9 +49,15 @@ public class PlayerController : MonoBehaviour
         {
             float distToEndLoc = Vector3.Distance(gameObject.transform.position, agent.destination);
 
-            if (distToEndLoc < 1)
+            if (distToEndLoc < stopDist)
             {
                 anim.SetBool("HasTargetPosition", false);
+
+                NavMeshHit myNavHit;
+                NavMesh.SamplePosition(gameObject.transform.position, out myNavHit, 100, -1);
+
+                agent.SetDestination(myNavHit.position);
+
                 return;
             }
 
