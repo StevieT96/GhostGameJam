@@ -46,9 +46,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-        if (agent.destination == null)
+        if (agent.destination != null)
         {
             float distToEndLoc = Vector3.Distance(gameObject.transform.position, agent.destination);
 
