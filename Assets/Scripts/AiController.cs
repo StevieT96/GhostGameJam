@@ -55,9 +55,14 @@ public class AiController : MonoBehaviour
 
     private void MoveToNewWayPoint()
     {
+        if (currentWayPoint != null)
+            currentWayPoint.occupied = false;
+
         arrivedAtWaypoint = false;
 
         currentWayPoint = FindRandomUnoccupiedWaypoint();
+
+        currentWayPoint.occupied = true;
 
         NavMeshHit myNavHit;
         if (NavMesh.SamplePosition(currentWayPoint.gameObject.transform.position, out myNavHit, 100, -1))
