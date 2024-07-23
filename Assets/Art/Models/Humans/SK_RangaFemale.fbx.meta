@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 861c7cd618486b04784be68c07e9c290
+guid: d999f8b82776b724dad0a4724c954d87
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AtlasPalette_M_DwarfAtlas1
+    second: {fileID: 2100000, guid: effc587ca2161d7439f42e1271ae33ee, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
