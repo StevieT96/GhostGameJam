@@ -4376,6 +4376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!1001 &213964051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4383,6 +4384,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1675133707}
     m_Modifications:
+    - target: {fileID: 2563217856560375814, guid: 915416054e2433a4ab1072f3cfd980a2,
+        type: 3}
+      propertyPath: waypoint
+      value: 
+      objectReference: {fileID: 939053983}
     - target: {fileID: 2563217856560375814, guid: 915416054e2433a4ab1072f3cfd980a2,
         type: 3}
       propertyPath: hauntDuration
@@ -7267,6 +7273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!1001 &371867611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7442,6 +7449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!1001 &401107942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8237,6 +8245,11 @@ PrefabInstance:
       propertyPath: AiRunPoint
       value: 
       objectReference: {fileID: 768548216}
+    - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
+        type: 3}
+      propertyPath: scareRunAmount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.size
@@ -11417,6 +11430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!1 &691709852
 GameObject:
   m_ObjectHideFlags: 0
@@ -12289,6 +12303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!43 &776163263
 Mesh:
   m_ObjectHideFlags: 0
@@ -13585,6 +13600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!1 &845588625
 GameObject:
   m_ObjectHideFlags: 0
@@ -15685,6 +15701,11 @@ PrefabInstance:
       objectReference: {fileID: 768548216}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
+      propertyPath: scareRunAmount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
+        type: 3}
       propertyPath: AiWayPoints.Array.size
       value: 16
       objectReference: {fileID: 0}
@@ -16414,6 +16435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!43 &944494409
 Mesh:
   m_ObjectHideFlags: 0
@@ -16590,6 +16612,11 @@ PrefabInstance:
       propertyPath: AiRunPoint
       value: 
       objectReference: {fileID: 768548216}
+    - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
+        type: 3}
+      propertyPath: scareRunAmount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.size
@@ -17390,6 +17417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!1001 &1013897393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18471,6 +18499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!43 &1109309858
 Mesh:
   m_ObjectHideFlags: 0
@@ -19350,6 +19379,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1128738390}
   hauntDuration: 1
+  waypoint: {fileID: 363667579}
+  scareRange: 3
 --- !u!1 &1141003020
 GameObject:
   m_ObjectHideFlags: 0
@@ -19395,6 +19426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!1001 &1150623134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19477,6 +19509,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4135549297922440897, guid: 224892e48016440428276190573c3091,
+        type: 3}
+      propertyPath: waypoint
+      value: 
+      objectReference: {fileID: 991245627}
     - target: {fileID: 6244852012875388539, guid: 224892e48016440428276190573c3091,
         type: 3}
       propertyPath: m_Name
@@ -20044,6 +20081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!1 &1221863539
 GameObject:
   m_ObjectHideFlags: 0
@@ -20478,6 +20516,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4135549297922440897, guid: 224892e48016440428276190573c3091,
+        type: 3}
+      propertyPath: waypoint
+      value: 
+      objectReference: {fileID: 1639090139}
     - target: {fileID: 6244852012875388539, guid: 224892e48016440428276190573c3091,
         type: 3}
       propertyPath: m_Name
@@ -27557,6 +27600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!1 &1595734032
 GameObject:
   m_ObjectHideFlags: 0
@@ -28991,6 +29035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!43 &1639292009
 Mesh:
   m_ObjectHideFlags: 0
@@ -29667,6 +29712,11 @@ PrefabInstance:
       objectReference: {fileID: 768548216}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
+      propertyPath: scareRunAmount
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
+        type: 3}
       propertyPath: AiWayPoints.Array.size
       value: 16
       objectReference: {fileID: 0}
@@ -30105,6 +30155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!1001 &1682427643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30219,6 +30270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!1 &1698547095
 GameObject:
   m_ObjectHideFlags: 0
@@ -31952,6 +32004,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1735439235}
   hauntDuration: 3
+  waypoint: {fileID: 1639090139}
+  scareRange: 4
 --- !u!95 &1735439235
 Animator:
   serializedVersion: 5
@@ -36395,6 +36449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!1 &1944391657
 GameObject:
   m_ObjectHideFlags: 0
@@ -36440,6 +36495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   occupied: 0
+  occupier: {fileID: 0}
 --- !u!43 &1966534378
 Mesh:
   m_ObjectHideFlags: 0
@@ -38957,6 +39013,11 @@ PrefabInstance:
       propertyPath: AiRunPoint
       value: 
       objectReference: {fileID: 768548216}
+    - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
+        type: 3}
+      propertyPath: scareRunAmount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.size
