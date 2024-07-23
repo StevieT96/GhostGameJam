@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 997c8c26be54031438f10d96c9d63047
+guid: 90c46c6faece55b4fb976b067e01f03b
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: AtlasPalette_M_DwarfAtlas
-    second: {fileID: 2100000, guid: effc587ca2161d7439f42e1271ae33ee, type: 2}
+      name: lambert1
+    second: {fileID: 2100000, guid: 767e70683b65f734fb4de2f1ebc77ebe, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -102,7 +102,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
