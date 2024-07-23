@@ -65,6 +65,8 @@ public class AiController : MonoBehaviour
         if (fleeing)
             return;
 
+        Waypoint tempWayPoint = FindRandomUnoccupiedWaypoint();
+
         if (currentWayPoint != null)
         {
             currentWayPoint.occupied = false;
@@ -73,7 +75,7 @@ public class AiController : MonoBehaviour
 
         arrivedAtWaypoint = false;
 
-        currentWayPoint = FindRandomUnoccupiedWaypoint();
+        currentWayPoint = tempWayPoint;
 
         currentWayPoint.occupied = true;
         currentWayPoint.occupier = this;
@@ -153,6 +155,10 @@ public class AiController : MonoBehaviour
 
     public void AddtoScareMeter(int _amount)
     {
+        StopAllCoroutines();
+
+        MoveToNewWayPoint();
+
         scareMeter++;
 
         anim.SetInteger("ScareMeter", scareMeter);
