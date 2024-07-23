@@ -100,6 +100,8 @@ public class AiController : MonoBehaviour
             StopAllCoroutines();
 
             gameObject.SetActive(false);
+
+            return;
         }
 
         int randomWaitTime = RandomNumberGenerator.GetInt32(LowerRandomTimeToWaitBeforeMoving, UpperRandomTimeToWaitBeforeMoving + 1);
