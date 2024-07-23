@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3564400625978246833}
   - component: {fileID: 5679451442297168154}
   - component: {fileID: 7067348297201514921}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7569650408488727227}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KingSizeBed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
