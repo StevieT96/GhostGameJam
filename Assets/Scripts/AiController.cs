@@ -14,7 +14,9 @@ public class AiController : MonoBehaviour
 
     private bool hasTargetPosition = false;
     private int scareMeter = 0;
+    private bool fleeing = false;
 
+    [SerializeField] private int scareRunAmount = 10;
 
     [SerializeField] private Waypoint AiRunPoint;
     [SerializeField] private List<Waypoint> AiWayPoints;
@@ -33,6 +35,11 @@ public class AiController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        foreach (var waypoint in AiWayPoints)
+        {
+            waypoint.AddAiToList(this);
+        }
 
         MoveToNewWayPoint();
 
@@ -55,14 +62,23 @@ public class AiController : MonoBehaviour
 
     private void MoveToNewWayPoint()
     {
+        if (fleeing)
+            return;
+
+        Waypoint tempWayPoint = FindRandomUnoccupiedWaypoint();
+
         if (currentWayPoint != null)
+        {
             currentWayPoint.occupied = false;
+            currentWayPoint = null;
+        }
 
         arrivedAtWaypoint = false;
 
-        currentWayPoint = FindRandomUnoccupiedWaypoint();
+        currentWayPoint = tempWayPoint;
 
         currentWayPoint.occupied = true;
+        currentWayPoint.occupier = this;
 
         NavMeshHit myNavHit;
         if (NavMesh.SamplePosition(currentWayPoint.gameObject.transform.position, out myNavHit, 100, -1))
@@ -78,6 +94,15 @@ public class AiController : MonoBehaviour
     private void ArrivedAtWaypoint()
     {
         arrivedAtWaypoint = true;
+
+        if (fleeing)
+        {
+            StopAllCoroutines();
+
+            gameObject.SetActive(false);
+
+            return;
+        }
 
         int randomWaitTime = RandomNumberGenerator.GetInt32(LowerRandomTimeToWaitBeforeMoving, UpperRandomTimeToWaitBeforeMoving + 1);
 
@@ -130,5 +155,26 @@ public class AiController : MonoBehaviour
         
 
         return null;
+    }
+
+    public void AddtoScareMeter(int _amount)
+    {
+        StopAllCoroutines();
+
+        MoveToNewWayPoint();
+
+        scareMeter++;
+
+        anim.SetInteger("ScareMeter", scareMeter);
+
+        if (scareMeter >= scareRunAmount)
+        {
+            fleeing = true;
+
+            currentWayPoint = AiRunPoint;
+
+            agent.SetDestination(AiRunPoint.gameObject.transform.position);
+        }
+
     }
 }
