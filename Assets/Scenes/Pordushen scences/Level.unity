@@ -7762,7 +7762,7 @@ PrefabInstance:
     - target: {fileID: 8726862574387598363, guid: a73aa315021d7d744a87259bf699cae3,
         type: 3}
       propertyPath: stopDist
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8726862574387598363, guid: a73aa315021d7d744a87259bf699cae3,
         type: 3}
