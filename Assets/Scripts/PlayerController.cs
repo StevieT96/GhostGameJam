@@ -71,11 +71,27 @@ public class PlayerController : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit, 9999999, layerMask))
         {
-            if (agent.SetDestination(hit.point))
+            switch (hit.collider.gameObject.layer)
             {
-                hasTargetPosition = true;
-                anim.SetBool("HasTargetPosition", true);
+                case 3: // ScareObject layer
+
+                    Debug.Log("clicked on a scareObject");
+
+                    break;
+
+                case 7: // Walkable layer
+
+                    Debug.Log("clicked on Walkable");
+
+                    if (agent.SetDestination(hit.point))
+                    {
+                        hasTargetPosition = true;
+                        anim.SetBool("HasTargetPosition", true);
+                    }
+
+                    break;
             }
+
         }
 
         return null;
