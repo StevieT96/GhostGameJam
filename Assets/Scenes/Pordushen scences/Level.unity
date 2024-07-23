@@ -7563,7 +7563,7 @@ PrefabInstance:
     - target: {fileID: 5047130405210208315, guid: e7f76f9683bb0a44ea376f1edf2abbe7,
         type: 3}
       propertyPath: m_LayerMask.m_Bits
-      value: 247
+      value: 255
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7f76f9683bb0a44ea376f1edf2abbe7, type: 3}
@@ -7759,6 +7759,11 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1654018128}
+    - target: {fileID: 8726862574387598363, guid: a73aa315021d7d744a87259bf699cae3,
+        type: 3}
+      propertyPath: stopDist
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8726862574387598363, guid: a73aa315021d7d744a87259bf699cae3,
         type: 3}
       propertyPath: layerMask.m_Bits
