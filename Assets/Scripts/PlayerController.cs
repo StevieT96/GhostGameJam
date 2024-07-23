@@ -85,6 +85,10 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            anim.SetBool("HasTargetPosition", false);
+        }
     }
 
     private void OnEnable() => _InputActions.Enable();
