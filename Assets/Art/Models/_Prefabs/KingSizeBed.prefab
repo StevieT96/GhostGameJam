@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 4627209320060537321}
   - component: {fileID: 8617916926864836172}
   - component: {fileID: 5799521968835932806}
+  - component: {fileID: 5992501531853084293}
   m_Layer: 0
   m_Name: KingSizeBed
   m_TagString: Untagged
@@ -252,6 +253,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5992501531853084293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5439493964185310035}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1714134, y: 0.5957234, z: 1.6216786}
+  m_Center: {x: 0, y: 0.2978617, z: 0.0013642311}
 --- !u!1 &5727123992915489422
 GameObject:
   m_ObjectHideFlags: 0
