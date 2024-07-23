@@ -105,7 +105,7 @@ public class AiController : MonoBehaviour
 
         if (unoccupiedWaypoints.Count > 0)
         {
-            while (foundWayPoint)
+            while (!foundWayPoint)
             {
                 int randomWayPoint = RandomNumberGenerator.GetInt32(0, unoccupiedWaypoints.Count);
 
