@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4674922572509118871}
   - component: {fileID: 6887736801052347824}
   - component: {fileID: 8138884743737497405}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1090,7 +1090,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1135574458207935916}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DiningChair 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class ScareObject : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Animator anim;
+
+    [SerializeField] private float hauntDuration = 3;
+
+
+    public void haunt()
     {
-        
+        if (anim.GetBool("BeingHaunted"))
+            return;
+
+        anim.SetBool("BeingHaunted", true);
+        StartCoroutine(WaitSecondsStopHaunting(hauntDuration));
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator WaitSecondsStopHaunting(float _waitTime)
     {
-        
+        yield return new WaitForSecondsRealtime(_waitTime);
+
+        anim.SetBool("BeingHaunted", false);
+
     }
+
 }

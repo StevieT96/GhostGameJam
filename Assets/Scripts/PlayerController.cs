@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] LayerMask layerMask;
 
+    [SerializeField] private float stopDist = 0.1f;
+    [SerializeField] private float scareStopDist = 1;
+
     private PlayerInputActionMap _inputActions;
     private PlayerInputActionMap _InputActions
     {
@@ -22,10 +25,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private bool hasTargetPosition = false;
-    private bool haunting = false;
-
-    private Vector3 targetPosition;
+    private bool movingToHaunt = false;
+    private GameObject objectToHaunt;
 
     [SerializeField] private Camera cam;
     Mouse mouse;
@@ -36,8 +37,8 @@ public class PlayerController : MonoBehaviour
         mouse = Mouse.current;
 
 
-        hasTargetPosition = anim.GetBool("HasTargetPosition");
-        haunting = anim.GetBool("Haunting");
+        /*hasTargetPosition = anim.GetBool("HasTargetPosition");
+        haunting = anim.GetBool("Haunting");*/
 
         _inputActions.Main.Move.performed += ctx => MoveActionPerformed();
     }
@@ -49,12 +50,44 @@ public class PlayerController : MonoBehaviour
         {
             float distToEndLoc = Vector3.Distance(gameObject.transform.position, agent.destination);
 
-            if (distToEndLoc < 1)
+            if (!movingToHaunt)
             {
-                anim.SetBool("HasTargetPosition", false);
-                hasTargetPosition = false;
-                return;
+                if (distToEndLoc < stopDist)
+                {
+                    anim.SetBool("HasTargetPosition", false);
+
+                    NavMeshHit myNavHit;
+                    NavMesh.SamplePosition(gameObject.transform.position, out myNavHit, 100, -1);
+
+                    agent.SetDestination(myNavHit.position);
+
+                    return;
+                }
             }
+            else if (objectToHaunt != null)
+            {
+                if (distToEndLoc < scareStopDist)
+                {
+                    anim.SetBool("HasTargetPosition", false);
+
+                    NavMeshHit myNavHit;
+                    NavMesh.SamplePosition(gameObject.transform.position, out myNavHit, 100, -1);
+
+                    agent.SetDestination(myNavHit.position);
+
+                    anim.SetBool("Haunting", true);
+
+                    movingToHaunt = false;
+
+                    objectToHaunt.GetComponent<ScareObject>().haunt();
+
+                    return;
+                }
+            }
+        }
+        else
+        {
+            anim.SetBool("HasTargetPosition", false);
         }
     }
 
@@ -71,11 +104,20 @@ public class PlayerController : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit, 9999999, layerMask))
         {
+            anim.SetBool("Haunting", false);
+
             switch (hit.collider.gameObject.layer)
             {
                 case 3: // ScareObject layer
 
                     Debug.Log("clicked on a scareObject");
+
+                    if (agent.SetDestination(hit.point))
+                    {
+                        anim.SetBool("HasTargetPosition", true);
+                        movingToHaunt = true;
+                        objectToHaunt = hit.transform.gameObject;
+                    }
 
                     break;
 
@@ -85,7 +127,7 @@ public class PlayerController : MonoBehaviour
 
                     if (agent.SetDestination(hit.point))
                     {
-                        hasTargetPosition = true;
+                        movingToHaunt = false;
                         anim.SetBool("HasTargetPosition", true);
                     }
 
