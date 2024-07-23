@@ -4899,6 +4899,16 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 884099487}
+    - target: {fileID: 2231084231228312013, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_UsePipelineSettings
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231084231228312013, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_AdditionalLightsShadowResolutionTier
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2433058829756999774, guid: 7c606d088331fc440b7bcafdf4f7eddf,
         type: 3}
       propertyPath: m_RootOrder
@@ -4988,6 +4998,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Shadows.m_NormalBias
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3285810677689782371, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_Shadows.m_Resolution
+      value: 1024
       objectReference: {fileID: 0}
     - target: {fileID: 5825840721241207868, guid: 7c606d088331fc440b7bcafdf4f7eddf,
         type: 3}
@@ -11896,6 +11911,16 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 884099487}
+    - target: {fileID: 2231084231228312013, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_UsePipelineSettings
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231084231228312013, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_AdditionalLightsShadowResolutionTier
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2433058829756999774, guid: 7c606d088331fc440b7bcafdf4f7eddf,
         type: 3}
       propertyPath: m_RootOrder
@@ -11985,6 +12010,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Shadows.m_NormalBias
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3285810677689782371, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_Shadows.m_Resolution
+      value: 1024
       objectReference: {fileID: 0}
     - target: {fileID: 5825840721241207868, guid: 7c606d088331fc440b7bcafdf4f7eddf,
         type: 3}
@@ -33730,6 +33760,16 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 884099487}
+    - target: {fileID: 2231084231228312013, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_UsePipelineSettings
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231084231228312013, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_AdditionalLightsShadowResolutionTier
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2433058829756999774, guid: 7c606d088331fc440b7bcafdf4f7eddf,
         type: 3}
       propertyPath: m_RootOrder
@@ -33819,6 +33859,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Shadows.m_NormalBias
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3285810677689782371, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_Shadows.m_Resolution
+      value: 1024
       objectReference: {fileID: 0}
     - target: {fileID: 5825840721241207868, guid: 7c606d088331fc440b7bcafdf4f7eddf,
         type: 3}
@@ -34364,6 +34409,16 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 884099487}
+    - target: {fileID: 2231084231228312013, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_UsePipelineSettings
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231084231228312013, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_AdditionalLightsShadowResolutionTier
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2433058829756999774, guid: 7c606d088331fc440b7bcafdf4f7eddf,
         type: 3}
       propertyPath: m_RootOrder
@@ -34453,6 +34508,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Shadows.m_NormalBias
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3285810677689782371, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_Shadows.m_Resolution
+      value: 1024
       objectReference: {fileID: 0}
     - target: {fileID: 5825840721241207868, guid: 7c606d088331fc440b7bcafdf4f7eddf,
         type: 3}
@@ -35113,6 +35173,16 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 884099487}
+    - target: {fileID: 2231084231228312013, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_UsePipelineSettings
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2231084231228312013, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_AdditionalLightsShadowResolutionTier
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2433058829756999774, guid: 7c606d088331fc440b7bcafdf4f7eddf,
         type: 3}
       propertyPath: m_RootOrder
@@ -35202,6 +35272,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Shadows.m_NormalBias
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3285810677689782371, guid: 7c606d088331fc440b7bcafdf4f7eddf,
+        type: 3}
+      propertyPath: m_Shadows.m_Resolution
+      value: 1024
       objectReference: {fileID: 0}
     - target: {fileID: 5825840721241207868, guid: 7c606d088331fc440b7bcafdf4f7eddf,
         type: 3}
