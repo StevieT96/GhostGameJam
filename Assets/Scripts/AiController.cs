@@ -28,7 +28,7 @@ public class AiController : MonoBehaviour
 
     private Waypoint currentWayPoint;
 
-    float distanceToWaypoint = 0;
+    float distanceToWaypoint = 99999;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +43,11 @@ public class AiController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        distanceToWaypoint = Vector3.Distance(gameObject.transform.position, currentWayPoint.gameObject.transform.position);
+        if (currentWayPoint != null)
+        {
+            distanceToWaypoint = Vector3.Distance(gameObject.transform.position, currentWayPoint.gameObject.transform.position);
+
+        }
 
         if (distanceToWaypoint < distanceNeededToArriveAtWaypoint && !arrivedAtWaypoint)
             ArrivedAtWaypoint();
