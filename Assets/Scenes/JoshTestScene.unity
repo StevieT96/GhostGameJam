@@ -1013,6 +1013,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8726862574387598362, guid: a73aa315021d7d744a87259bf699cae3,
+        type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 5fce732c00a19ba43b920b8c99d54521, type: 3}
     - target: {fileID: 8726862574387598363, guid: a73aa315021d7d744a87259bf699cae3,
         type: 3}
       propertyPath: cam
