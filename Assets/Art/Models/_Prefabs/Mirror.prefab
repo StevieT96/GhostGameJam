@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6650554871401923132}
   m_Layer: 0
-  m_Name: Mirra
+  m_Name: Mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
