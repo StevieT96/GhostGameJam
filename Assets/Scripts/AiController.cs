@@ -43,7 +43,7 @@ public class AiController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        distanceToWaypoint = Vector3.Distance(transform.position, currentWayPoint.gameObject.transform.position);
+        distanceToWaypoint = Vector3.Distance(gameObject.transform.position, currentWayPoint.gameObject.transform.position);
 
         if (distanceToWaypoint < distanceNeededToArriveAtWaypoint && !arrivedAtWaypoint)
             ArrivedAtWaypoint();

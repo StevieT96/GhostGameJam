@@ -4777,6 +4777,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 210015117}
+  - component: {fileID: 210015118}
   m_Layer: 0
   m_Name: KITwaypoint (4)
   m_TagString: Untagged
@@ -4799,6 +4800,19 @@ Transform:
   m_Father: {fileID: 1826861414}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &210015118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210015116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!1 &214180616
 GameObject:
   m_ObjectHideFlags: 0
@@ -10109,6 +10123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 363667578}
+  - component: {fileID: 363667579}
   m_Layer: 0
   m_Name: BEDwaypoint (2)
   m_TagString: Untagged
@@ -10131,6 +10146,19 @@ Transform:
   m_Father: {fileID: 1989840499}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &363667579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363667577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!1001 &371867611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10230,6 +10258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 377846408}
+  - component: {fileID: 377846409}
   m_Layer: 0
   m_Name: BEDwaypoint (6)
   m_TagString: Untagged
@@ -10252,6 +10281,19 @@ Transform:
   m_Father: {fileID: 1989840499}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &377846409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377846407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!43 &384146172
 Mesh:
   m_ObjectHideFlags: 0
@@ -13998,92 +14040,92 @@ PrefabInstance:
         type: 3}
       propertyPath: AiRunPoint
       value: 
-      objectReference: {fileID: 768548214}
+      objectReference: {fileID: 768548216}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.size
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 939053981}
+      objectReference: {fileID: 939053983}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[1]
       value: 
-      objectReference: {fileID: 1681183536}
+      objectReference: {fileID: 1681183538}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[2]
       value: 
-      objectReference: {fileID: 1141003020}
+      objectReference: {fileID: 363667579}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[3]
       value: 
-      objectReference: {fileID: 1690682512}
+      objectReference: {fileID: 1141003022}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[4]
       value: 
-      objectReference: {fileID: 671750155}
+      objectReference: {fileID: 1690682514}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[5]
       value: 
-      objectReference: {fileID: 377846407}
+      objectReference: {fileID: 671750157}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[6]
       value: 
-      objectReference: {fileID: 839679143}
+      objectReference: {fileID: 377846409}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[7]
       value: 
-      objectReference: {fileID: 991245625}
+      objectReference: {fileID: 839679145}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[8]
       value: 
-      objectReference: {fileID: 1093904824}
+      objectReference: {fileID: 991245627}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[9]
       value: 
-      objectReference: {fileID: 1639090137}
+      objectReference: {fileID: 1093904826}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[10]
       value: 
-      objectReference: {fileID: 1944391657}
+      objectReference: {fileID: 1639090139}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[11]
       value: 
-      objectReference: {fileID: 210015116}
+      objectReference: {fileID: 1944391659}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[12]
       value: 
-      objectReference: {fileID: 1938995814}
+      objectReference: {fileID: 210015118}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[13]
       value: 
-      objectReference: {fileID: 1582212597}
+      objectReference: {fileID: 1938995816}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[14]
       value: 
-      objectReference: {fileID: 1179732560}
+      objectReference: {fileID: 1582212599}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[15]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1179732562}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: distanceNeededToArriveAtWaypoint
@@ -16674,6 +16716,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 671750156}
+  - component: {fileID: 671750157}
   m_Layer: 0
   m_Name: BEDwaypoint (5)
   m_TagString: Untagged
@@ -16696,6 +16739,19 @@ Transform:
   m_Father: {fileID: 1989840499}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &671750157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671750155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!1 &676957876
 GameObject:
   m_ObjectHideFlags: 0
@@ -19974,6 +20030,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 768548215}
+  - component: {fileID: 768548216}
   m_Layer: 0
   m_Name: exit
   m_TagString: Untagged
@@ -19996,6 +20053,19 @@ Transform:
   m_Father: {fileID: 1617361146}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &768548216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768548214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!1 &773796205
 GameObject:
   m_ObjectHideFlags: 0
@@ -20935,6 +21005,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 839679144}
+  - component: {fileID: 839679145}
   m_Layer: 0
   m_Name: Bathwaypoint (1)
   m_TagString: Untagged
@@ -20957,6 +21028,19 @@ Transform:
   m_Father: {fileID: 1624571894}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &839679145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839679143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!1 &840883789
 GameObject:
   m_ObjectHideFlags: 0
@@ -21477,92 +21561,92 @@ PrefabInstance:
         type: 3}
       propertyPath: AiRunPoint
       value: 
-      objectReference: {fileID: 768548214}
+      objectReference: {fileID: 768548216}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.size
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 939053981}
+      objectReference: {fileID: 939053983}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[1]
       value: 
-      objectReference: {fileID: 1681183536}
+      objectReference: {fileID: 1681183538}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[2]
       value: 
-      objectReference: {fileID: 1141003020}
+      objectReference: {fileID: 363667579}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[3]
       value: 
-      objectReference: {fileID: 1690682512}
+      objectReference: {fileID: 1141003022}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[4]
       value: 
-      objectReference: {fileID: 671750155}
+      objectReference: {fileID: 1690682514}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[5]
       value: 
-      objectReference: {fileID: 377846407}
+      objectReference: {fileID: 671750157}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[6]
       value: 
-      objectReference: {fileID: 839679143}
+      objectReference: {fileID: 377846409}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[7]
       value: 
-      objectReference: {fileID: 991245625}
+      objectReference: {fileID: 839679145}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[8]
       value: 
-      objectReference: {fileID: 1093904824}
+      objectReference: {fileID: 991245627}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[9]
       value: 
-      objectReference: {fileID: 1639090137}
+      objectReference: {fileID: 1093904826}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[10]
       value: 
-      objectReference: {fileID: 1944391657}
+      objectReference: {fileID: 1639090139}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[11]
       value: 
-      objectReference: {fileID: 210015116}
+      objectReference: {fileID: 1944391659}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[12]
       value: 
-      objectReference: {fileID: 1938995814}
+      objectReference: {fileID: 210015118}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[13]
       value: 
-      objectReference: {fileID: 1582212597}
+      objectReference: {fileID: 1938995816}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[14]
       value: 
-      objectReference: {fileID: 1179732560}
+      objectReference: {fileID: 1582212599}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[15]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1179732562}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: distanceNeededToArriveAtWaypoint
@@ -21664,6 +21748,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 939053982}
+  - component: {fileID: 939053983}
   m_Layer: 0
   m_Name: BEDwaypoint
   m_TagString: Untagged
@@ -21686,6 +21771,19 @@ Transform:
   m_Father: {fileID: 1989840499}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939053983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939053981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!43 &940407459
 Mesh:
   m_ObjectHideFlags: 0
@@ -22370,92 +22468,92 @@ PrefabInstance:
         type: 3}
       propertyPath: AiRunPoint
       value: 
-      objectReference: {fileID: 768548214}
+      objectReference: {fileID: 768548216}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.size
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 939053981}
+      objectReference: {fileID: 939053983}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[1]
       value: 
-      objectReference: {fileID: 1681183536}
+      objectReference: {fileID: 1681183538}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[2]
       value: 
-      objectReference: {fileID: 1141003020}
+      objectReference: {fileID: 363667579}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[3]
       value: 
-      objectReference: {fileID: 1690682512}
+      objectReference: {fileID: 1141003022}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[4]
       value: 
-      objectReference: {fileID: 671750155}
+      objectReference: {fileID: 1690682514}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[5]
       value: 
-      objectReference: {fileID: 377846407}
+      objectReference: {fileID: 671750157}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[6]
       value: 
-      objectReference: {fileID: 839679143}
+      objectReference: {fileID: 377846409}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[7]
       value: 
-      objectReference: {fileID: 991245625}
+      objectReference: {fileID: 839679145}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[8]
       value: 
-      objectReference: {fileID: 1093904824}
+      objectReference: {fileID: 991245627}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[9]
       value: 
-      objectReference: {fileID: 1639090137}
+      objectReference: {fileID: 1093904826}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[10]
       value: 
-      objectReference: {fileID: 1944391657}
+      objectReference: {fileID: 1639090139}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[11]
       value: 
-      objectReference: {fileID: 210015116}
+      objectReference: {fileID: 1944391659}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[12]
       value: 
-      objectReference: {fileID: 1938995814}
+      objectReference: {fileID: 210015118}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[13]
       value: 
-      objectReference: {fileID: 1582212597}
+      objectReference: {fileID: 1938995816}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[14]
       value: 
-      objectReference: {fileID: 1179732560}
+      objectReference: {fileID: 1582212599}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[15]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1179732562}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: distanceNeededToArriveAtWaypoint
@@ -22952,6 +23050,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 991245626}
+  - component: {fileID: 991245627}
   m_Layer: 0
   m_Name: Bathwaypoint (2)
   m_TagString: Untagged
@@ -22974,6 +23073,19 @@ Transform:
   m_Father: {fileID: 1624571894}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &991245627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991245625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!43 &1027129678
 Mesh:
   m_ObjectHideFlags: 0
@@ -24444,6 +24556,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1093904825}
+  - component: {fileID: 1093904826}
   m_Layer: 0
   m_Name: KITwaypoint (1)
   m_TagString: Untagged
@@ -24466,6 +24579,19 @@ Transform:
   m_Father: {fileID: 1826861414}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1093904826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093904824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!1 &1097721568
 GameObject:
   m_ObjectHideFlags: 0
@@ -25419,6 +25545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1141003021}
+  - component: {fileID: 1141003022}
   m_Layer: 0
   m_Name: BEDwaypoint (3)
   m_TagString: Untagged
@@ -25441,6 +25568,19 @@ Transform:
   m_Father: {fileID: 1989840499}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1141003022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141003020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!1 &1179732560
 GameObject:
   m_ObjectHideFlags: 0
@@ -25450,6 +25590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1179732561}
+  - component: {fileID: 1179732562}
   m_Layer: 0
   m_Name: KITwaypoint (7)
   m_TagString: Untagged
@@ -25472,6 +25613,19 @@ Transform:
   m_Father: {fileID: 1826861414}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1179732562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179732560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!43 &1187871151
 Mesh:
   m_ObjectHideFlags: 0
@@ -45062,6 +45216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1582212598}
+  - component: {fileID: 1582212599}
   m_Layer: 0
   m_Name: KITwaypoint (6)
   m_TagString: Untagged
@@ -45084,6 +45239,19 @@ Transform:
   m_Father: {fileID: 1826861414}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1582212599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582212597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!1 &1594905710
 GameObject:
   m_ObjectHideFlags: 0
@@ -46211,6 +46379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1639090138}
+  - component: {fileID: 1639090139}
   m_Layer: 0
   m_Name: KITwaypoint (2)
   m_TagString: Untagged
@@ -46233,6 +46402,19 @@ Transform:
   m_Father: {fileID: 1826861414}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1639090139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639090137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!1 &1645750717
 GameObject:
   m_ObjectHideFlags: 0
@@ -47794,92 +47976,92 @@ PrefabInstance:
         type: 3}
       propertyPath: AiRunPoint
       value: 
-      objectReference: {fileID: 768548214}
+      objectReference: {fileID: 768548216}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.size
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 939053981}
+      objectReference: {fileID: 939053983}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[1]
       value: 
-      objectReference: {fileID: 1681183536}
+      objectReference: {fileID: 1681183538}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[2]
       value: 
-      objectReference: {fileID: 1141003020}
+      objectReference: {fileID: 363667579}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[3]
       value: 
-      objectReference: {fileID: 1690682512}
+      objectReference: {fileID: 1141003022}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[4]
       value: 
-      objectReference: {fileID: 671750155}
+      objectReference: {fileID: 1690682514}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[5]
       value: 
-      objectReference: {fileID: 377846407}
+      objectReference: {fileID: 671750157}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[6]
       value: 
-      objectReference: {fileID: 839679143}
+      objectReference: {fileID: 377846409}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[7]
       value: 
-      objectReference: {fileID: 991245625}
+      objectReference: {fileID: 839679145}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[8]
       value: 
-      objectReference: {fileID: 1093904824}
+      objectReference: {fileID: 991245627}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[9]
       value: 
-      objectReference: {fileID: 1639090137}
+      objectReference: {fileID: 1093904826}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[10]
       value: 
-      objectReference: {fileID: 1944391657}
+      objectReference: {fileID: 1639090139}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[11]
       value: 
-      objectReference: {fileID: 210015116}
+      objectReference: {fileID: 1944391659}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[12]
       value: 
-      objectReference: {fileID: 1938995814}
+      objectReference: {fileID: 210015118}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[13]
       value: 
-      objectReference: {fileID: 1582212597}
+      objectReference: {fileID: 1938995816}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[14]
       value: 
-      objectReference: {fileID: 1179732560}
+      objectReference: {fileID: 1582212599}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[15]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1179732562}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: distanceNeededToArriveAtWaypoint
@@ -48378,6 +48560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1681183537}
+  - component: {fileID: 1681183538}
   m_Layer: 0
   m_Name: BEDwaypoint (1)
   m_TagString: Untagged
@@ -48400,6 +48583,19 @@ Transform:
   m_Father: {fileID: 1989840499}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1681183538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681183536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!1 &1684869398
 GameObject:
   m_ObjectHideFlags: 0
@@ -48754,6 +48950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1690682513}
+  - component: {fileID: 1690682514}
   m_Layer: 0
   m_Name: BEDwaypoint (4)
   m_TagString: Untagged
@@ -48776,6 +48973,19 @@ Transform:
   m_Father: {fileID: 1989840499}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1690682514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690682512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!1 &1694934784
 GameObject:
   m_ObjectHideFlags: 0
@@ -55022,6 +55232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1938995815}
+  - component: {fileID: 1938995816}
   m_Layer: 0
   m_Name: KITwaypoint (5)
   m_TagString: Untagged
@@ -55044,6 +55255,19 @@ Transform:
   m_Father: {fileID: 1826861414}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1938995816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938995814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!1 &1944391657
 GameObject:
   m_ObjectHideFlags: 0
@@ -55053,6 +55277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1944391658}
+  - component: {fileID: 1944391659}
   m_Layer: 0
   m_Name: KITwaypoint (3)
   m_TagString: Untagged
@@ -55075,6 +55300,19 @@ Transform:
   m_Father: {fileID: 1826861414}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1944391659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944391657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3ccfb0f985f8a74e8ee1c08c802e295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
 --- !u!1 &1968147510
 GameObject:
   m_ObjectHideFlags: 0
@@ -58011,92 +58249,92 @@ PrefabInstance:
         type: 3}
       propertyPath: AiRunPoint
       value: 
-      objectReference: {fileID: 768548214}
+      objectReference: {fileID: 768548216}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.size
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[0]
       value: 
-      objectReference: {fileID: 939053981}
+      objectReference: {fileID: 939053983}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[1]
       value: 
-      objectReference: {fileID: 1681183536}
+      objectReference: {fileID: 1681183538}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[2]
       value: 
-      objectReference: {fileID: 1141003020}
+      objectReference: {fileID: 363667579}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[3]
       value: 
-      objectReference: {fileID: 1690682512}
+      objectReference: {fileID: 1141003022}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[4]
       value: 
-      objectReference: {fileID: 671750155}
+      objectReference: {fileID: 1690682514}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[5]
       value: 
-      objectReference: {fileID: 377846407}
+      objectReference: {fileID: 671750157}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[6]
       value: 
-      objectReference: {fileID: 839679143}
+      objectReference: {fileID: 377846409}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[7]
       value: 
-      objectReference: {fileID: 991245625}
+      objectReference: {fileID: 839679145}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[8]
       value: 
-      objectReference: {fileID: 1093904824}
+      objectReference: {fileID: 991245627}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[9]
       value: 
-      objectReference: {fileID: 1639090137}
+      objectReference: {fileID: 1093904826}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[10]
       value: 
-      objectReference: {fileID: 1944391657}
+      objectReference: {fileID: 1639090139}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[11]
       value: 
-      objectReference: {fileID: 210015116}
+      objectReference: {fileID: 1944391659}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[12]
       value: 
-      objectReference: {fileID: 1938995814}
+      objectReference: {fileID: 210015118}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[13]
       value: 
-      objectReference: {fileID: 1582212597}
+      objectReference: {fileID: 1938995816}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[14]
       value: 
-      objectReference: {fileID: 1179732560}
+      objectReference: {fileID: 1582212599}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: AiWayPoints.Array.data[15]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1179732562}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: distanceNeededToArriveAtWaypoint
