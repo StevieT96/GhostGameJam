@@ -46,24 +46,19 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*float distToEndLoc = Vector3.Distance(transform.position, agent.destination);
 
 
         if (agent.destination == null)
-
-        if (distToEndLoc < 1)
         {
-            anim.SetBool("HasTargetPosition", false);
-            hasTargetPosition = false;
-            return;
+            float distToEndLoc = Vector3.Distance(gameObject.transform.position, agent.destination);
+
+            if (distToEndLoc < 1)
+            {
+                anim.SetBool("HasTargetPosition", false);
+                hasTargetPosition = false;
+                return;
+            }
         }
-
-
-
-        distToPlayer = Vector3.Distance(stateMachine.NavigationAgent.GameObject().transform.position, stateMachine.FollowTarget.transform.position);
-
-        if (distToPlayer < 3)
-            targetLocation = stateMachine.NavigationAgent.GameObject().transform.position;*/
     }
 
     private void OnEnable() => _InputActions.Enable();
@@ -82,6 +77,7 @@ public class PlayerController : MonoBehaviour
             if (agent.SetDestination(hit.point))
             {
                 hasTargetPosition = true;
+                anim.SetBool("HasTargetPosition", true);
             }
         }
 
