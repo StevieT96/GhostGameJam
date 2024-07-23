@@ -8,6 +8,9 @@ public class ScareObject : MonoBehaviour
 
     [SerializeField] private float hauntDuration = 3;
 
+    [SerializeField] private Waypoint waypoint;
+
+    [SerializeField] private float scareRange = 3;
 
     public void haunt()
     {
@@ -15,6 +18,9 @@ public class ScareObject : MonoBehaviour
             return;
 
         anim.SetBool("BeingHaunted", true);
+
+        waypoint.Scare(scareRange);
+
         StartCoroutine(WaitSecondsStopHaunting(hauntDuration));
     }
 
