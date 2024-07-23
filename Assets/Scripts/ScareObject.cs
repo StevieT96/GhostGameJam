@@ -15,7 +15,7 @@ public class ScareObject : MonoBehaviour
             return;
 
         anim.SetBool("BeingHaunted", true);
-        WaitSecondsStopHaunting(hauntDuration);
+        StartCoroutine(WaitSecondsStopHaunting(hauntDuration));
     }
 
     private IEnumerator WaitSecondsStopHaunting(float _waitTime)
