@@ -55,7 +55,21 @@ public class AiController : MonoBehaviour
 
         int randomWayPoint = RandomNumberGenerator.GetInt32(0, AiWayPoints.Count);
 
-        currentWayPoint = AiWayPoints[randomWayPoint];
+        if (currentWayPoint != null)
+        {
+            if (AiWayPoints[randomWayPoint] == currentWayPoint)
+            {
+                randomWayPoint = RandomNumberGenerator.GetInt32(0, AiWayPoints.Count);
+
+                currentWayPoint = AiWayPoints[randomWayPoint];
+            }
+            else
+                currentWayPoint = AiWayPoints[randomWayPoint];
+        }
+        else
+            currentWayPoint = AiWayPoints[randomWayPoint];
+
+
 
         NavMeshHit myNavHit;
         if (NavMesh.SamplePosition(currentWayPoint.transform.position, out myNavHit, 100, -1))
