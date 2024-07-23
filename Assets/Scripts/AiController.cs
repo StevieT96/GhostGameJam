@@ -97,6 +97,8 @@ public class AiController : MonoBehaviour
 
         if (fleeing)
         {
+            StopAllCoroutines();
+
             gameObject.SetActive(false);
         }
 
