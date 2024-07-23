@@ -76,6 +76,9 @@ public class PlayerController : MonoBehaviour
                     agent.SetDestination(myNavHit.position);
 
                     anim.SetBool("Haunting", true);
+
+                    movingToHaunt = false;
+
                     objectToHaunt.GetComponent<ScareObject>().haunt();
 
                     return;
@@ -120,6 +123,7 @@ public class PlayerController : MonoBehaviour
 
                     if (agent.SetDestination(hit.point))
                     {
+                        movingToHaunt = false;
                         anim.SetBool("HasTargetPosition", true);
                     }
 
