@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] LayerMask layerMask;
 
-    [SerializeField] private float stopDist = 1;
+    [SerializeField] private float stopDist = 0.1f;
+    [SerializeField] private float scareStopDist = 1;
 
     private PlayerInputActionMap _inputActions;
     private PlayerInputActionMap _InputActions
@@ -49,22 +50,36 @@ public class PlayerController : MonoBehaviour
         {
             float distToEndLoc = Vector3.Distance(gameObject.transform.position, agent.destination);
 
-            if (distToEndLoc < stopDist)
+            if (!movingToHaunt)
             {
-                anim.SetBool("HasTargetPosition", false);
+                if (distToEndLoc < stopDist)
+                {
+                    anim.SetBool("HasTargetPosition", false);
 
-                NavMeshHit myNavHit;
-                NavMesh.SamplePosition(gameObject.transform.position, out myNavHit, 100, -1);
+                    NavMeshHit myNavHit;
+                    NavMesh.SamplePosition(gameObject.transform.position, out myNavHit, 100, -1);
 
-                agent.SetDestination(myNavHit.position);
+                    agent.SetDestination(myNavHit.position);
 
-                return;
+                    return;
+                }
             }
-
-            if (movingToHaunt && objectToHaunt != null)
+            else if (objectToHaunt != null)
             {
-                anim.SetBool("Haunting", true);
-                objectToHaunt.GetComponent<ScareObject>().haunt();
+                if (distToEndLoc < scareStopDist)
+                {
+                    anim.SetBool("HasTargetPosition", false);
+
+                    NavMeshHit myNavHit;
+                    NavMesh.SamplePosition(gameObject.transform.position, out myNavHit, 100, -1);
+
+                    agent.SetDestination(myNavHit.position);
+
+                    anim.SetBool("Haunting", true);
+                    objectToHaunt.GetComponent<ScareObject>().haunt();
+
+                    return;
+                }
             }
         }
     }
