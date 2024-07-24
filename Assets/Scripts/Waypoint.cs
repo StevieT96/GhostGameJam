@@ -13,6 +13,8 @@ public class Waypoint : MonoBehaviour
 
     private List<AiController> AiList = new List<AiController>();
 
+    public AudioSource Intaract;
+
 
     /// <summary> only have 1 manager point, can be any point in the list of ai waypoints </summary>
     [SerializeField] private bool managerPoint = false;
@@ -73,5 +75,8 @@ public class Waypoint : MonoBehaviour
                 }
             }
         }
+
+        Intaract.Play();
     }
+
 }

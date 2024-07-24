@@ -32,6 +32,8 @@ public class AiController : MonoBehaviour
 
     float distanceToWaypoint = 99999;
 
+    public AudioSource Sreaam;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -181,5 +183,6 @@ public class AiController : MonoBehaviour
             agent.SetDestination(AiRunPoint.gameObject.transform.position);
         }
 
+        Sreaam.Play();
     }
 }
