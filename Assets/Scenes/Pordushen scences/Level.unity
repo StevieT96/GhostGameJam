@@ -7809,7 +7809,7 @@ PrefabInstance:
     - target: {fileID: 9195703184618154328, guid: dd70ef6369823a04d93ab5937217dd1f,
         type: 3}
       propertyPath: scareRunAmount
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9195703184618154328, guid: dd70ef6369823a04d93ab5937217dd1f,
         type: 3}
@@ -9660,7 +9660,7 @@ PrefabInstance:
     - target: {fileID: 1536269833196840207, guid: ebe93b6f1f857c74992f5577e5a6498b,
         type: 3}
       propertyPath: scareRunAmount
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1536269833196840207, guid: ebe93b6f1f857c74992f5577e5a6498b,
         type: 3}
@@ -13184,7 +13184,7 @@ PrefabInstance:
     - target: {fileID: 2829936107775319037, guid: 1644394a2d1b363448d229f5692d6754,
         type: 3}
       propertyPath: scareRunAmount
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2829936107775319037, guid: 1644394a2d1b363448d229f5692d6754,
         type: 3}
@@ -31248,7 +31248,7 @@ PrefabInstance:
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: scareRunAmount
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
@@ -34371,7 +34371,7 @@ PrefabInstance:
     - target: {fileID: 4179418462824641661, guid: a4dfb85ccbad44247b1feb58fe408add,
         type: 3}
       propertyPath: scareRunAmount
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4179418462824641661, guid: a4dfb85ccbad44247b1feb58fe408add,
         type: 3}
