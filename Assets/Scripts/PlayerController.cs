@@ -48,11 +48,9 @@ public class PlayerController : MonoBehaviour
     {
         if (agent.destination != null)
         {
-            float distToEndLoc = Vector3.Distance(gameObject.transform.position, agent.destination);
-
             if (!movingToHaunt)
             {
-                if (distToEndLoc < stopDist)
+                if (agent.remainingDistance < stopDist)
                 {
                     anim.SetBool("HasTargetPosition", false);
 
@@ -66,7 +64,7 @@ public class PlayerController : MonoBehaviour
             }
             else if (objectToHaunt != null)
             {
-                if (distToEndLoc < scareStopDist)
+                if (agent.remainingDistance < scareStopDist)
                 {
                     anim.SetBool("HasTargetPosition", false);
 
