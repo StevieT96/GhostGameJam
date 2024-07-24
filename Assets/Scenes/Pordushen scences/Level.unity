@@ -26399,6 +26399,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3279939992243356364, guid: 5535bb4f011b1f94c9cf20fb9a99edb6,
+        type: 3}
+      propertyPath: m_text
+      value: "interactable object \nare shown \nwith a dot"
+      objectReference: {fileID: 0}
     - target: {fileID: 3314226037479259080, guid: 5535bb4f011b1f94c9cf20fb9a99edb6,
         type: 3}
       propertyPath: m_Name
@@ -26463,6 +26468,11 @@ PrefabInstance:
         type: 3}
       propertyPath: SceneName
       value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270301259782435156, guid: 5535bb4f011b1f94c9cf20fb9a99edb6,
+        type: 3}
+      propertyPath: m_text
+      value: "Scare all humans out\n of the house"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5535bb4f011b1f94c9cf20fb9a99edb6, type: 3}
