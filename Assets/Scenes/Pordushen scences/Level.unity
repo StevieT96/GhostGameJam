@@ -14911,6 +14911,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: BedSidetable
       objectReference: {fileID: 0}
+    - target: {fileID: 7833626428533983312, guid: f11a212e170f4a743aadb0c34f70e273,
+        type: 3}
+      propertyPath: waypoint
+      value: 
+      objectReference: {fileID: 671750157}
+    - target: {fileID: 7833626428533983312, guid: f11a212e170f4a743aadb0c34f70e273,
+        type: 3}
+      propertyPath: scareRange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833626428533983312, guid: f11a212e170f4a743aadb0c34f70e273,
+        type: 3}
+      propertyPath: hauntDuration
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11a212e170f4a743aadb0c34f70e273, type: 3}
 --- !u!4 &870771490 stripped
@@ -18267,6 +18282,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BedSidetable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833626428533983312, guid: f11a212e170f4a743aadb0c34f70e273,
+        type: 3}
+      propertyPath: waypoint
+      value: 
+      objectReference: {fileID: 363667579}
+    - target: {fileID: 7833626428533983312, guid: f11a212e170f4a743aadb0c34f70e273,
+        type: 3}
+      propertyPath: scareRange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833626428533983312, guid: f11a212e170f4a743aadb0c34f70e273,
+        type: 3}
+      propertyPath: hauntDuration
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11a212e170f4a743aadb0c34f70e273, type: 3}
@@ -40400,6 +40430,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BedSidetable (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833626428533983312, guid: f11a212e170f4a743aadb0c34f70e273,
+        type: 3}
+      propertyPath: waypoint
+      value: 
+      objectReference: {fileID: 1141003022}
+    - target: {fileID: 7833626428533983312, guid: f11a212e170f4a743aadb0c34f70e273,
+        type: 3}
+      propertyPath: scareRange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7833626428533983312, guid: f11a212e170f4a743aadb0c34f70e273,
+        type: 3}
+      propertyPath: hauntDuration
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11a212e170f4a743aadb0c34f70e273, type: 3}
