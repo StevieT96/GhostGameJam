@@ -13,7 +13,9 @@ public class Waypoint : MonoBehaviour
 
     private List<AiController> AiList = new List<AiController>();
 
-    [SerializeField] private bool runpoint = false;
+
+    /// <summary> only have 1 manager point, can be any point in the list of ai waypoints </summary>
+    [SerializeField] private bool managerPoint = false;
 
     /// <summary> only needs to be set if runpoint is true </summary>
     [SerializeField] private TextMeshProUGUI AiCountLeftToFind;
@@ -25,7 +27,7 @@ public class Waypoint : MonoBehaviour
     {
         AiList.Add(ai);
         
-        if (runpoint)
+        if (managerPoint)
         {
             AiCountLeftToFind.text = AiList.Count.ToString();
 
@@ -36,7 +38,7 @@ public class Waypoint : MonoBehaviour
     {
         AiList.Remove(ai);
 
-        if (runpoint)
+        if (managerPoint)
         {
             AiCountLeftToFind.text = AiList.Count.ToString();
 
