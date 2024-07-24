@@ -3156,6 +3156,18 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &164634861 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1856208634678535710, guid: 5535bb4f011b1f94c9cf20fb9a99edb6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1459166360}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &176359924
 Mesh:
   m_ObjectHideFlags: 0
@@ -4384,6 +4396,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1001 &213964051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7331,6 +7346,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &362414544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4962202398538505543, guid: 5535bb4f011b1f94c9cf20fb9a99edb6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1459166360}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &363667577
 GameObject:
   m_ObjectHideFlags: 0
@@ -7377,6 +7398,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1001 &371867611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7553,6 +7577,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1 &382761383
 GameObject:
   m_ObjectHideFlags: 0
@@ -7768,6 +7795,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9195703184618154328, guid: dd70ef6369823a04d93ab5937217dd1f,
         type: 3}
+      propertyPath: AiRunPoint
+      value: 
+      objectReference: {fileID: 768548216}
+    - target: {fileID: 9195703184618154328, guid: dd70ef6369823a04d93ab5937217dd1f,
+        type: 3}
+      propertyPath: scareRunAmount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9195703184618154328, guid: dd70ef6369823a04d93ab5937217dd1f,
+        type: 3}
       propertyPath: AiWayPoints.Array.size
       value: 16
       objectReference: {fileID: 0}
@@ -7851,6 +7888,11 @@ PrefabInstance:
       propertyPath: AiWayPoints.Array.data[15]
       value: 
       objectReference: {fileID: 1179732562}
+    - target: {fileID: 9195703184618154328, guid: dd70ef6369823a04d93ab5937217dd1f,
+        type: 3}
+      propertyPath: distanceNeededToArriveAtWaypoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9195703184618154328, guid: dd70ef6369823a04d93ab5937217dd1f,
         type: 3}
       propertyPath: LowerRandomTimeToWaitBeforeMoving
@@ -9392,6 +9434,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1536269833196840207, guid: ebe93b6f1f857c74992f5577e5a6498b,
         type: 3}
+      propertyPath: AiRunPoint
+      value: 
+      objectReference: {fileID: 768548216}
+    - target: {fileID: 1536269833196840207, guid: ebe93b6f1f857c74992f5577e5a6498b,
+        type: 3}
+      propertyPath: scareRunAmount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536269833196840207, guid: ebe93b6f1f857c74992f5577e5a6498b,
+        type: 3}
       propertyPath: AiWayPoints.Array.size
       value: 16
       objectReference: {fileID: 0}
@@ -9475,6 +9527,11 @@ PrefabInstance:
       propertyPath: AiWayPoints.Array.data[15]
       value: 
       objectReference: {fileID: 1179732562}
+    - target: {fileID: 1536269833196840207, guid: ebe93b6f1f857c74992f5577e5a6498b,
+        type: 3}
+      propertyPath: distanceNeededToArriveAtWaypoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1536269833196840207, guid: ebe93b6f1f857c74992f5577e5a6498b,
         type: 3}
       propertyPath: LowerRandomTimeToWaitBeforeMoving
@@ -11881,6 +11938,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1 &691709852
 GameObject:
   m_ObjectHideFlags: 0
@@ -12808,6 +12868,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2829936107775319037, guid: 1644394a2d1b363448d229f5692d6754,
         type: 3}
+      propertyPath: AiRunPoint
+      value: 
+      objectReference: {fileID: 768548216}
+    - target: {fileID: 2829936107775319037, guid: 1644394a2d1b363448d229f5692d6754,
+        type: 3}
+      propertyPath: scareRunAmount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2829936107775319037, guid: 1644394a2d1b363448d229f5692d6754,
+        type: 3}
       propertyPath: AiWayPoints.Array.size
       value: 16
       objectReference: {fileID: 0}
@@ -12891,6 +12961,11 @@ PrefabInstance:
       propertyPath: AiWayPoints.Array.data[15]
       value: 
       objectReference: {fileID: 1179732562}
+    - target: {fileID: 2829936107775319037, guid: 1644394a2d1b363448d229f5692d6754,
+        type: 3}
+      propertyPath: distanceNeededToArriveAtWaypoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2829936107775319037, guid: 1644394a2d1b363448d229f5692d6754,
         type: 3}
       propertyPath: LowerRandomTimeToWaitBeforeMoving
@@ -13030,6 +13105,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 164634861}
+  endScreen: {fileID: 362414544}
 --- !u!43 &776163263
 Mesh:
   m_ObjectHideFlags: 0
@@ -14327,6 +14405,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1 &845588625
 GameObject:
   m_ObjectHideFlags: 0
@@ -17063,6 +17144,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!43 &944494409
 Mesh:
   m_ObjectHideFlags: 0
@@ -17782,6 +17866,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1001 &1013897393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18879,6 +18966,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 1
+  AiCountLeftToFind: {fileID: 164634861}
+  endScreen: {fileID: 362414544}
 --- !u!43 &1109309858
 Mesh:
   m_ObjectHideFlags: 0
@@ -19806,6 +19896,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1001 &1150623134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20491,6 +20584,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1001 &1199197154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28335,6 +28431,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1 &1595734032
 GameObject:
   m_ObjectHideFlags: 0
@@ -29770,6 +29869,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!43 &1639292009
 Mesh:
   m_ObjectHideFlags: 0
@@ -30447,7 +30549,7 @@ PrefabInstance:
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
       propertyPath: scareRunAmount
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3950505642104835461, guid: 36aca97dc5c0d0243a6a88de67582cc4,
         type: 3}
@@ -30894,6 +30996,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1001 &1682427643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31015,6 +31120,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1 &1698547095
 GameObject:
   m_ObjectHideFlags: 0
@@ -33477,6 +33585,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4179418462824641661, guid: a4dfb85ccbad44247b1feb58fe408add,
         type: 3}
+      propertyPath: AiRunPoint
+      value: 
+      objectReference: {fileID: 768548216}
+    - target: {fileID: 4179418462824641661, guid: a4dfb85ccbad44247b1feb58fe408add,
+        type: 3}
+      propertyPath: scareRunAmount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4179418462824641661, guid: a4dfb85ccbad44247b1feb58fe408add,
+        type: 3}
       propertyPath: AiWayPoints.Array.size
       value: 16
       objectReference: {fileID: 0}
@@ -33560,6 +33678,11 @@ PrefabInstance:
       propertyPath: AiWayPoints.Array.data[15]
       value: 
       objectReference: {fileID: 1179732562}
+    - target: {fileID: 4179418462824641661, guid: a4dfb85ccbad44247b1feb58fe408add,
+        type: 3}
+      propertyPath: distanceNeededToArriveAtWaypoint
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4179418462824641661, guid: a4dfb85ccbad44247b1feb58fe408add,
         type: 3}
       propertyPath: LowerRandomTimeToWaitBeforeMoving
@@ -37567,6 +37690,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1 &1944391657
 GameObject:
   m_ObjectHideFlags: 0
@@ -37613,6 +37739,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   occupied: 0
   occupier: {fileID: 0}
+  managerPoint: 0
+  AiCountLeftToFind: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1 &1962093617
 GameObject:
   m_ObjectHideFlags: 0
