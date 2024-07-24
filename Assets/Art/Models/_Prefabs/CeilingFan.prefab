@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2103241539733815619}
   - component: {fileID: 3285810677689782371}
   - component: {fileID: 2231084231228312013}
-  - component: {fileID: 2709662971006059792}
   m_Layer: 0
   m_Name: DO NOT REMOVE THIS
   m_TagString: Untagged
@@ -32,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2433058829756999774}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!108 &3285810677689782371
 Light:
@@ -116,27 +115,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
---- !u!95 &2709662971006059792
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2051586286389015149}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e5165ed9785088b468a96d3dd222d81f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6717784507480380945
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,20 +143,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-<<<<<<< Updated upstream
   - {fileID: 5355756631255653324}
-=======
->>>>>>> Stashed changes
   - {fileID: 2103241539733815619}
-  - {fileID: 7055289533878117329}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!1001 &5609727269138529319
-=======
---- !u!1001 &7377974871355769914
->>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -188,38 +158,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 34804feb8c9b7cc43b18a433793527b4,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< Updated upstream
       value: 0
-=======
-      value: 1
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 34804feb8c9b7cc43b18a433793527b4,
         type: 3}
       propertyPath: m_LocalPosition.x
-<<<<<<< Updated upstream
       value: 0.238
-=======
-      value: 0.245
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 34804feb8c9b7cc43b18a433793527b4,
         type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< Updated upstream
       value: 0.517
-=======
-      value: 0.575
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 34804feb8c9b7cc43b18a433793527b4,
         type: 3}
       propertyPath: m_LocalPosition.z
-<<<<<<< Updated upstream
       value: 0.242
-=======
-      value: 0.244
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 34804feb8c9b7cc43b18a433793527b4,
         type: 3}
@@ -229,11 +183,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 34804feb8c9b7cc43b18a433793527b4,
         type: 3}
       propertyPath: m_LocalRotation.x
-<<<<<<< Updated upstream
       value: 0
-=======
-      value: -0
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 34804feb8c9b7cc43b18a433793527b4,
         type: 3}
@@ -267,72 +217,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34804feb8c9b7cc43b18a433793527b4, type: 3}
-<<<<<<< Updated upstream
 --- !u!4 &5355756631255653324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 34804feb8c9b7cc43b18a433793527b4,
     type: 3}
   m_PrefabInstance: {fileID: 5609727269138529319}
   m_PrefabAsset: {fileID: 0}
-=======
---- !u!1 &6567667482707280026 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4415462540764349600, guid: 34804feb8c9b7cc43b18a433793527b4,
-    type: 3}
-  m_PrefabInstance: {fileID: 7377974871355769914}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &8563460194962774922
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6567667482707280026}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e5165ed9785088b468a96d3dd222d81f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!4 &7055289533878117329 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 34804feb8c9b7cc43b18a433793527b4,
-    type: 3}
-  m_PrefabInstance: {fileID: 7377974871355769914}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7683911583648872811 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 34804feb8c9b7cc43b18a433793527b4,
-    type: 3}
-  m_PrefabInstance: {fileID: 7377974871355769914}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &5062908905635713109
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7683911583648872811}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e5165ed9785088b468a96d3dd222d81f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
->>>>>>> Stashed changes
