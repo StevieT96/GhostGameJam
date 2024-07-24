@@ -8017,7 +8017,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.25
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -23951,6 +23951,21 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 665109180}
+    - target: {fileID: 8311692199906288459, guid: c044e760aee185049b86c76702e21bfc,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311692199906288459, guid: c044e760aee185049b86c76702e21bfc,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311692199906288459, guid: c044e760aee185049b86c76702e21bfc,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 9086672477284334095, guid: c044e760aee185049b86c76702e21bfc,
         type: 3}
       propertyPath: m_Mesh
