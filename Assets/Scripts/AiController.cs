@@ -101,6 +101,11 @@ public class AiController : MonoBehaviour
 
             gameObject.SetActive(false);
 
+            foreach (var waypoint in AiWayPoints)
+            {
+                waypoint.RemoveAiFromList(this);
+            }
+
             return;
         }
 
