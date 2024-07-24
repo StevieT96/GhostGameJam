@@ -3203,8 +3203,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160.9, y: -53.7}
-  m_SizeDelta: {x: 155.0435, y: 38.7609}
+  m_AnchoredPosition: {x: 224.43536, y: -53.699997}
+  m_SizeDelta: {x: 282.1142, y: 38.7609}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2718379533858565056
 CanvasRenderer:
@@ -3234,7 +3234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '    Scares'
+  m_text: '    Scares Left'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
